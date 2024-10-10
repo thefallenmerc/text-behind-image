@@ -26,7 +26,7 @@ const fonts = [
 ]
 
 export default function TextBetweenImageLayers() {
-  const [imageUrl, setImageUrl] = useState('')
+  // const [imageUrl, setImageUrl] = useState('')
   const [text, setText] = useState('Your Text Here')
   const [fontSize, setFontSize] = useState(48)
   const [fontFamily, setFontFamily] = useState('Roboto')
@@ -112,7 +112,7 @@ export default function TextBetweenImageLayers() {
       setError('')
       try {
         const originalImageUrl = URL.createObjectURL(file)
-        setImageUrl(originalImageUrl)
+        // setImageUrl(originalImageUrl)
 
         const blob = await removeBackground(file)
         const foregroundUrl = URL.createObjectURL(blob)
